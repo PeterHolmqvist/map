@@ -14,16 +14,23 @@ for (let num of nums) {
 console.log(result)
 
 
-
-
-
 // Using map()
+const multiplyTwo = function (num) {
+  return num * 2
+};
 
+const mapResults = nums.map(multiplyTwo)
+
+console.log(mapResults)
 
 // Simplified w/ map()
 
+const simplyfied = nums.map(function (num) {return num *2});
+console.log(simplyfied)
 
 // Simplfied w/ map() + arrow function
+const arrow = nums.map(num => num * 2);
+console.log(arrow);
 
 
 // With objects:
